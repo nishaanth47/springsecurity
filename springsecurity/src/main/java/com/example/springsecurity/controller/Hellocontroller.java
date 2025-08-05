@@ -10,14 +10,10 @@ import com.example.springsecurity.repo.UserRepo;
 
 @RestController
 public class Hellocontroller {
-//	@GetMapping("/")
-//	public String greet()
-//	{
-//		return "welcome";
-//	}
-	private UserRepo userRepo;
 	@GetMapping("/")
-    public List<Users> getAllUsers() {
-        return userRepo.findAll(); // 🔁 Return list of users from DB
-    }
+	public String greet()
+	{
+		return "welcome";
+	}
+	
 }
